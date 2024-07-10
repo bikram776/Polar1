@@ -1,0 +1,117 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  
+  .card {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #6600ff, #bc13fe);
+  }
+  
+  .card img {
+    width: 50%;
+    height: auto;
+    object-fit: content;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Media queries for responsive design */
+  
+  @media only screen and (max-width: 768px) {
+   .card {
+      width: 70%;
+    }
+   .card img {
+      height: 100px;
+    }
+   .card h1 {
+      font-size: 18px;
+    }
+   .card p {
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+   .card {
+      width: 60%;
+      height: 70%;
+    }
+   .card img {
+      height: 60px;
+    }
+   .card h1 {
+      font-size: 16px;
+    }
+   .card p {
+      font-size: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .card {
+      max-width: 250px; /* reduce the width of the card */
+      margin: 14px auto; /* reduce the margin */
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    .card img {
+      height: 100px; /* reduce the height of the image */
+    }
+    
+    .card h1 {
+      font-size: 18px; /* reduce the font size of the h1 */
+    }
+    
+    .card p {
+      font-size: 14px; /* reduce the font size of the p */
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    .card {
+      max-width: 200px; /* reduce the width of the card */
+      margin: 12px auto; /* reduce the margin */
+      padding: 18px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    .card img {
+      height: 80px; /* reduce the height of the image */
+    }
+    
+    .card h1 {
+      font-size: 16px; /* reduce the font size of the h1 */
+    }
+    
+    .card p {
+      font-size: 12px; /* reduce the font size of the p */
+    }
+  }
