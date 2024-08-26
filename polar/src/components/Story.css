@@ -1,0 +1,117 @@
+.story-head{
+    text-align: center;
+}
+.story-head h1{
+    font-size: x-large;
+}
+.responsive-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: auto auto auto auto;
+    border-radius: 20px;
+    width: 60%;
+    margin-bottom: 10px;
+    background-color: white;
+  }
+  
+  .image {
+    width: 70%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  .imgtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+  }
+  
+  .imgtext .figcaption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .imgtext .paragraph {
+    font-size: 14px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    height: 100px;
+    margin-top: 0rem;
+    text-wrap: pretty;
+    color: black;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (min-width: 768px) {
+    .story-head h1{
+        font-size: large;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .responsive-container {
+      flex-direction: column;
+      width: 60%;
+      justify-content: center;
+      align-items: center;
+      margin: auto auto 2rem auto;
+    }
+    .image {
+      width: 70%;
+      height: 300px;
+    }
+    .imgtext{
+        width: 40%;
+    }
+    .imgtext .figcaption {
+      font-size: 20px;
+    }
+    .imgtext .paragraph {
+      font-size: 12px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .story-head h1{
+        font-size: xx-large;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .responsive-container {
+      padding: 40px;
+      flex-direction: column;
+      width: 75%;
+      margin-left: 1.1rem;
+      margin-bottom: 40px;
+      padding-top: 20px;
+      padding-bottom: 5px;
+    }
+    .image {
+      width: 60%;
+      height: 350px;
+    }
+    .imgtext{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    .imgtext .figcaption {
+      font-size: 22px;
+      white-space: nowrap;
+
+    }
+    .imgtext .paragraph {
+      font-size: 15px;
+    }
+  }
